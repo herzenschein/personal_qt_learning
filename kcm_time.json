@@ -1,0 +1,21 @@
+{
+    "KPlugin": {
+        "Description": "Configure Time",
+        "Description[de]": "Zeit einrichten",
+        "Description[pt]": "Configurar a Hora",
+        "FormFactors": [
+            "desktop",
+            "handset",
+            "tablet",
+            "mediacenter"
+        ],
+        "Icon": "preferences-system-time",
+        "Name": "Time",
+        "Name[de]": "Zeit",
+        "Name[pt]": "Hora",
+    },
+    "X-KDE-Keywords": "Time,Date,Clock",
+    "X-KDE-Keywords[de]": "Zeit,Datum,Uhr",
+    "X-KDE-Keywords[pt_BR]": "Hora,Data,Relógio",
+    "X-KDE-System-Settings-Parent-Category": "personalization"
+}

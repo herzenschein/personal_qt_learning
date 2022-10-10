@@ -1,0 +1,6 @@
+File=myconfig.kcfg
+Namespace=Time
+ClassName=Config
+Mutators=true
+ParentInConstructor=true
+GenerateProperties=true
