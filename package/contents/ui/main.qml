@@ -9,7 +9,7 @@ KCM.SimpleKCM {
 
     Kirigami.FormLayout {
         Controls.Button {
-            Kirigami.FormData.label: "This writes the time to the kcmtimerc config file."
+            Kirigami.FormData.label: "This shows the value in the config file."
             text: kcm.config.width
         }
     }
