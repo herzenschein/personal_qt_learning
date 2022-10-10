@@ -21,7 +21,7 @@ find_package(KF5 REQUIRED COMPONENTS
 
 kcoreaddons_add_plugin(kcm_time INSTALL_NAMESPACE "plasma/kcms/systemsettings")
 
-kconfig_add_kcfg_files(kcm_time myconfig.kcfgc)
+kconfig_add_kcfg_files(kcm_time myconfig.kcfgc GENERATE_MOC)
 
 target_sources(kcm_time PRIVATE timesettings.cpp)
 
