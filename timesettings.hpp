@@ -6,7 +6,6 @@
 class TimeSettings : public KQuickAddons::ManagedConfigModule
 {
     Q_OBJECT
-    QML_ELEMENT
     Q_PROPERTY(Time::Config *config READ config CONSTANT)
 
 public:
