@@ -1,4 +1,5 @@
 #include "timesettings.hpp"
+#include "myconfig.h"
 
 #include <KPluginFactory>
 #include <KSharedConfig>
