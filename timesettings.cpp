@@ -12,7 +12,7 @@ TimeSettings::TimeSettings(QObject *parent, const KPluginMetaData &data, const Q
     , m_config(new Time::Config(this))
 {
     setButtons(Help | Apply | Default);
-    qmlRegisterAnonymousType<TimeSettings::Config>("org.kde.timesettings.private", 1);
+    qmlRegisterAnonymousType<Time::Config>("org.kde.timesettings.private", 1);
 
 }
 
