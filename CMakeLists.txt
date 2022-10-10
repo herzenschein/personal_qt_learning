@@ -30,6 +30,7 @@ target_link_libraries(kcm_time
     KF5::I18n
     KF5::QuickAddons
     KF5::ConfigCore
+    KF5::ConfigGui
 )
 
 kpackage_install_package(package kcm_time kcms)
