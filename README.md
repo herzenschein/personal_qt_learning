@@ -1,4 +1,12 @@
-# personal_qt_learning
-A repo for me to share my screw ups when learning C++ / Qt.
+#kconfigxttest
 
-The main repository is empty. Any code whatsoever will be stored in a branch rather than main.
+This is a test project to learn kconfigxt.
+
+To run it:
+
+```
+cmake -B build -DCMAKE_INSTALL_PREFIX=~/kde/usr
+cmake --build build
+cmake --install build
+./$HOME/kde/usr/bin/kconfigxttest
+```

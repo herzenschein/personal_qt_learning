@@ -1,0 +1,6 @@
+File=window.kcfg
+ClassName=WindowSettings
+Mutators=true
+DefaultValueGetters=true
+GenerateProperties=true
+Singleton=true
