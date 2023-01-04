@@ -1,4 +1,5 @@
-# personal_qt_learning
-A repo for me to share my screw ups when learning C++ / Qt.
+# ECM KDECompilerSettings
 
-The main repository is empty. Any code whatsoever will be stored in a branch rather than main.
+Why is it that just by including KDECompilerSettings, I get undefined reference to printHello(), yet commenting it works fine?
+
+What am I missing?
