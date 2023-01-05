@@ -5,8 +5,7 @@ project(hello_app)
 find_package(ECM REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
-# If this gets uncommented, undefined reference to printHello()
-#include(KDECompilerSettings)
+include(KDECompilerSettings)
 include(KDEInstallDirs)
 include(KDECMakeSettings NO_POLICY_SCOPE)
 
