@@ -1,4 +1,3 @@
-// gnu::visibility is the same as __attribute__((visibility("default)))
+#include "libhello_export.h"
 
-//[[gnu::visibility("default")]]
-void printHello();
+void LIBHELLO_EXPORT printHello();
