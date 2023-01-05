@@ -12,6 +12,10 @@ include(KDECompilerSettings)
 include(KDEInstallDirs)
 include(KDECMakeSettings NO_POLICY_SCOPE)
 
+# Neither of these two seem to fix the issue
+include(GenerateExportHeader)
+include(ECMGenerateExportHeader)
+
 add_executable(hello_bin main.cpp)
 
 target_include_directories(hello_bin
