@@ -5,6 +5,9 @@ project(hello_app)
 find_package(ECM REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
+# KDECompilerSettings defines CMAKE_CXX_VISIBILITY_PRESET hidden
+# which in turn translates to -fvisibility=hidden
+# causing an undefined reference error for printHello()
 include(KDECompilerSettings)
 include(KDEInstallDirs)
 include(KDECMakeSettings NO_POLICY_SCOPE)
