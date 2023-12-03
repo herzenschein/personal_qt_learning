@@ -16,9 +16,7 @@ qt_add_qml_module(appqnavi
     URI qnavi
     VERSION 1.0
     QML_FILES Main.qml
-    SOURCES restclient.h restclient.cpp
     SOURCES naviauthenticator.h naviauthenticator.cpp
-    SOURCES navitoken.h navitoken.cpp
 )
 
 target_link_libraries(appqnavi

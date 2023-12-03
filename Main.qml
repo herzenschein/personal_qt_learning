@@ -10,11 +10,11 @@ Window {
     visible: true
     title: "Hello World"
 
-    RestClient {
-        id: rc
-        auth.user: user.text
-        auth.server: server.text
-        auth.password: password.text
+    NaviAuthenticator {
+        id: na
+        server: server.text
+        user: user.text
+        password: password.text
     }
 
     ColumnLayout {
@@ -51,7 +51,7 @@ Window {
             Layout.alignment: Qt.AlignHCenter
             text: "Log in"
             onClicked: {
-                rc.getRequest();
+                na.getRequest()
             }
         }
     }

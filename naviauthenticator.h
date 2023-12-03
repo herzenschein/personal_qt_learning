@@ -3,7 +3,7 @@
 #include <QObject>
 #include <QtQml>
 #include <QByteArray>
-#include "navitoken.h"
+#include <QCryptographicHash>
 
 class NaviAuthenticator : public QObject
 {
@@ -17,8 +17,6 @@ class NaviAuthenticator : public QObject
 public:
     NaviAuthenticator(QObject *parent = nullptr);
 
-    NaviToken *generator;
-
     QByteArray server;
     QByteArray user;
     QByteArray password;
@@ -27,8 +25,15 @@ public:
     QByteArray client;
     QByteArray version;
 
+    QNetworkAccessManager manager;
+    QNetworkRequest ping;
+    QNetworkReply *reply;
+
 public slots:
+    void generateToken();
     QUrl generateCall();
+    void getRequest();
+    void readyRead();
 
 signals:
     void serverChanged();
